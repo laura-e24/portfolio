@@ -72,19 +72,73 @@ body section[id*="special"]  {
     100% { transform: translate(5%,0) } */
 }
 
-/* .overlay {
-  position: fixed; 
-  width: 100vw;
-  height: 100vh; 
-  top: 0;
+.screen {
+  top: 15%;
+  margin-right: 100px;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: url("/nnnoise.svg");
-  background-size: cover;
-  animation: rotBGimg 30s linear infinite;
-  z-index: -1;
-} */
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  transform:  skew(8deg, 25deg);
+  height: 175px;
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdhMTNlZWYzMjc0NmJkYzQzZjkxZDg0YzYwN2I1ZmVlZmU0M2U1OSZjdD1n/21SefUcsgnK3onA8Wa/giphy.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  clip-path: polygon(10% 23%, 45% 16%, 60% 14%, 88% 10%, 76% 85%, 45% 90%, 4% 91%, 7% 55%);
+}
+
+@keyframes jumpy {
+  0% {
+      transform: translateY(2px);
+  }
+  20% {
+      transform: translateY(-2px);
+  }
+  35% {
+      transform: translateY(-2px);
+  }
+  50% {
+      transform: translateY(2px);
+  }
+  65% {
+      transform: translateY(-2px);
+  }
+  80% {
+      transform: translateY(5px);
+  }
+  100% {
+      transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes jumpy {
+  0% {
+      -webkit-transform: translateY(2px);
+  }
+  20% {
+      -webkit-transform: translateY(-2px);
+  }
+  35% {
+      -webkit-transform: translateY(-2px);
+  }
+  50% {
+      -webkit-transform: translateY(2px);
+  }
+  65% {
+      -webkit-transform: translateY(-2px);
+  }
+  80% {
+      -webkit-transform: translateY(5px);
+  }
+  100% {
+      -webkit-transform: translateY(-5px);
+  }
+}
+
+.animation {
+  animation: jumpy 4s linear infinite;
+}
 
 .shadow-top {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0px -4px 3px rgb(0 0 0 / 0.1);

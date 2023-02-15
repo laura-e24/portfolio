@@ -18,15 +18,16 @@ export default function Home() {
           <section className='max-w-screen-lg mx-auto w-full flex justify-between'>
             <div className='block my-auto'>
               <span>
-                <h1 className='text-white font-sans text-6xl font-bold'>Hi, <br/> I'm Laura</h1>
+                <h1 className='text-white font-sans text-6xl font-bold'>Hi, I'm Laura</h1>
                 <p className='text-2xl font-light mt-2'>A fullstack web developer.</p>
               </span>
               <button className='bg-one px-6 py-2 rounded-md mt-4'>
                 Contact
               </button>
             </div>
-            <div className="">
-              <img src="/mock.jpg" width={500} />
+            <div className="relative">
+              <div className='screen'></div>
+              <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 10px 10px rgba(133, 59, 206, .3))'}} />
             </div>
           </section>
           <section id="special" className='py-16 mt-56'>
