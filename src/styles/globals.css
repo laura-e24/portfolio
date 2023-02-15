@@ -30,19 +30,64 @@ body {
   }
 }
 body {
-  background-image: url("/nnnoise.svg");
   background-color: #181622;
 }
 
 body section[id*="special"]  {
-  background-image: url("/nnnoise.svg");
   background-color: #13111C;
-  /* animation: rotBGimg 30s linear infinite; */
+}
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('/nnnoise.svg') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 80s linear infinite;
+  opacity: .9;
+  visibility: visible;
 }
 
-footer {
-  /* background: linear-gradient(90deg, #5E084D 0%, #2C0A5C 46.35%, #16093B 100%);; */
-  background: linear-gradient(to top, #1e0039, #1b0835, #180e2f, #181329, #181622);
+@keyframes bg-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+    /* 0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) } */
+}
+
+/* .overlay {
+  position: fixed; 
+  width: 100vw;
+  height: 100vh; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/nnnoise.svg");
+  background-size: cover;
+  animation: rotBGimg 30s linear infinite;
+  z-index: -1;
+} */
+
+.shadow-top {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0px -4px 3px rgb(0 0 0 / 0.1);
 }
 
 a {

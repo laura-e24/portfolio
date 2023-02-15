@@ -12,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-screen w-full">
+        <div className="bg"></div>
         <NavBar />
         <div className=' mt-20'>
           <section className='max-w-screen-lg mx-auto w-full flex justify-between'>
