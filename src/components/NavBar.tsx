@@ -20,7 +20,7 @@ const NavBar = () => {
       <Link className="hover:text-one glow border-r border-gray-600 pr-4 border-opacity-50" href='#'>
         Habilidades
       </Link>
-      <Link className="hover:text-one glow" href='#'>
+      <Link className="hover:text-one glow" href='#contact'>
         Contacto
       </Link>
     </nav>

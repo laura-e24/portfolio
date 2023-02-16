@@ -4,12 +4,14 @@ const FAIcon = ({
   type = "regular",
   name,
   size = "base",
-  className= " "
+  className= " ",
+  color = ""
 }: {
-  type?: "light" | "regular" | "solid" | "brands";
+  type?: "thin" | "light" | "regular" | "solid" | "brands";
   name: string;
   size?: "xs" | "sm" | "base" | "md" | "lg" | "xl";
   className?: string;
+  color?: string;
 }) => {
   const style: CSSProperties = {
     fontSize: 0,
@@ -56,7 +58,7 @@ const FAIcon = ({
         ...style,
       }}
     >
-      <i className={`fa-${type} fa-${name} m-auto text-center mx-aut `}></i>
+      <i className={`fa-${type} fa-${name} m-auto ${color} text-center fill-current `}></i>
     </div>
   );
 };

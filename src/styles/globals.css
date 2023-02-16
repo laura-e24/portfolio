@@ -110,6 +110,7 @@ p.underline-color {
   animation: bg-animation 80s linear infinite;
   opacity: .9;
   visibility: visible;
+  z-index: -1;
 }
 @keyframes bg-animation {
   from {

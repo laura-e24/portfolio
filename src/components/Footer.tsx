@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FAIcon from "./FAIcon";
 
 const Footer = () => {
@@ -5,30 +6,54 @@ const Footer = () => {
     <>
     <style>
       {`
+        .glow {
+          text-shadow: 2px 2px 5px fuchsia;
+        }
+        .no-margin {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
       `}
     </style>
-    <footer className="relative bottom-0 w-full mt-64 py-16">
-      <p className="text-center font-sans font-light">Contacto</p>
+    <footer id="contact" className="relative bottom-0 w-full mt-64 py-16">
+      <p className="text-center font-medium tracking-wider pb-10">Contacto</p>
       <div className="w-full justify-center flex">
-        <address className="inline-block mx-auto">
-          <div className="flex text-center w-full">
-            <FAIcon className="mx-0" type="brands" name="linkedin" />
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-laura-eliceiry-123239252/" className=" not-italic">María Laura Eliceiry</a>
-          </div> 
-          <div className="flex">
-            <FAIcon className="mx-0" type="brands" name="github" />
-            <a href="https://github.com/laura-e24" className=" not-italic">laura-e24</a>
-          </div> 
-          <div className="flex">
-            <FAIcon className="mx-0" type="solid" name="envelope" />
-            <a href="mailto:lceiry@outlook.com" className=" not-italic">lceiry@outlook.com</a>
-          </div> 
+        <address className="flex w-3/5 justify-around text-sm font-light">
+          <Link 
+            passHref
+            target="_blank" 
+            href="https://www.linkedin.com/in/mar%C3%ADa-laura-eliceiry-123239252" 
+            className="flex px-4 py-2 border-b-2 border-transparent hover:border-one"
+          >
+            <FAIcon className="no-margin glow" type="brands" name="linkedin-in" color="text-four" />
+            <p className="ml-4 my-auto not-italic">
+              María Laura Eliceiry
+            </p>
+          </Link>
+          <Link 
+            passHref
+            target="_blank" 
+            href="https://github.com/laura-e24"
+            className="flex px-4 py-2 border-b-2 border-transparent hover:border-one"
+          >
+            <FAIcon className="no-margin glow" type="brands" name="github" color="text-four" />
+            <p className="not-italic ml-4 my-auto">laura-e24</p>
+          </Link> 
+          <Link 
+            passHref
+            target="_blank" 
+            href="mailto:lceiry@outlook.com"
+            className="flex px-4 py-2 border-b-2 border-transparent hover:border-one"
+          >
+            <FAIcon className="no-margin glow" type="solid" name="envelope" color="text-four" />
+            <p className="ml-4 my-auto not-italic">lceiry@outlook.com</p>
+          </Link> 
         </address>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full" style={{zIndex: -1}}>
+      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full" style={{zIndex: -2}}>
         <img src="/wave-footer-dark.svg" className="opacity-50" width='100%' />
       </div>
-      <div className="absolute bottom-0   w-screen" style={{zIndex: -2, transform: 'translateZ(100px) translateX(-30px) translateY(3px)'}}>
+      <div className="absolute bottom-0   w-screen" style={{zIndex: -3, transform: 'translateZ(100px) translateX(-30px) translateY(3px)'}}>
         <img src="/wave-footer-darker.svg" className="opacity-30" width='100%' style={{filter: 'drop-shadow(5px 5px 20px rgba(19, 17, 28, 1))'}} />
       </div>
     </footer>
