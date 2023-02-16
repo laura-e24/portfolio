@@ -13,21 +13,24 @@ export default function Home() {
       </Head>
       <main className="h-screen w-full">
         <div className="bg"></div>
+        <div className="wave">
+          <img src="/pattern.svg" className='w-full' style={{}} />
+        </div>
         <NavBar />
-        <div className=' mt-20'>
+        <div className='mt-20'>
           <section className='max-w-screen-lg mx-auto w-full flex justify-between'>
             <div className='block my-auto'>
               <span>
                 <h1 className='text-white font-sans text-6xl font-bold'>Hi, I'm Laura</h1>
-                <p className='text-2xl font-light mt-2'>A fullstack web developer.</p>
+                <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>A fullstack web developer.</span></p>
               </span>
-              <button className='bg-one px-6 py-2 rounded-md mt-4'>
+              <button className='text-sm px-6 py-2 rounded-md mt-4 btn-three'>
                 Contact
               </button>
             </div>
             <div className="relative">
               <div className='screen'></div>
-              <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 10px 10px rgba(133, 59, 206, .3))'}} />
+              <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}} />
             </div>
           </section>
           <section id="special" className='py-16 mt-56'>

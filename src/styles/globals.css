@@ -36,6 +36,67 @@ body {
 body section[id*="special"]  {
   background-color: #13111C;
 }
+.btn-three {
+  color: #CCCCCC;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(133, 59, 206, .2);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(133, 59, 206, .5);
+  transform: scale(1.2,1.2);
+  border-radius: 6px;
+
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+.wave {
+  background-image: url("/pattern.svg");
+  background-size: cover;
+  opacity: 10%;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+p.underline-color {
+  color: #853BCE;  /* colour of underline */
+  text-decoration: underline;
+}
+
 .bg {
   position: fixed;
   top: -50%;
@@ -50,7 +111,6 @@ body section[id*="special"]  {
   opacity: .9;
   visibility: visible;
 }
-
 @keyframes bg-animation {
   from {
     transform: rotate(0deg);
@@ -59,17 +119,6 @@ body section[id*="special"]  {
   to {
     transform: rotate(360deg);
   }
-    /* 0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) } */
 }
 
 .screen {
@@ -83,7 +132,7 @@ body section[id*="special"]  {
   width: 200px;
   transform:  skew(8deg, 25deg);
   height: 175px;
-  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdhMTNlZWYzMjc0NmJkYzQzZjkxZDg0YzYwN2I1ZmVlZmU0M2U1OSZjdD1n/21SefUcsgnK3onA8Wa/giphy.gif");
+  background-image: url("/screen.gif");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   clip-path: polygon(10% 23%, 45% 16%, 60% 14%, 88% 10%, 76% 85%, 45% 90%, 4% 91%, 7% 55%);
