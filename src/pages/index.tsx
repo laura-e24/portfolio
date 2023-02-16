@@ -1,5 +1,4 @@
-import Footer from '@/components/Footer'
-import NavBar from '@/components/NavBar'
+import Layout from '@/components/Layout'
 import Head from 'next/head'
 
 export default function Home() {
@@ -11,54 +10,46 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-screen w-full">
-        <div className="bg"></div>
-        <div className="wave">
-          <img src="/pattern.svg" className='w-full' style={{}} />
-        </div>
-        <NavBar />
-        <div className='mt-20'>
-          <section className='max-w-screen-lg mx-auto w-full flex justify-between'>
-            <div className='block my-auto'>
-              <span>
-                <h1 className='text-white font-sans text-6xl font-bold'>Hi, I'm Laura</h1>
-                <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>A fullstack web developer.</span></p>
-              </span>
-              <button className='text-sm px-6 py-2 rounded-md mt-4 btn-three'>
-                Contact
-              </button>
-            </div>
-            <div className="relative">
-              <div className='screen'></div>
-              <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}} />
-            </div>
-          </section>
-          <section id="special" className='py-16 mt-56'>
-           <div className='max-w-screen-lg mx-auto  flex justify-between'>
-           <div className="pr-16">
-              <img src="/mock.jpg" width={500} />
-            </div>
-            <span className='max-w-prose my-auto'>
-                <h1 className='text-white font-sans text-3xl font-semibold text-right'>Sed ut perspiciatis unde omnis</h1>
-                <p className='text-right font-light mt-2'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-              </span>
-           </div>
-          </section>
-          <section className='max-w-screen-lg mx-auto'>
-            <h1 className='text-white text-center text-4xl font-sans font-bold mt-32'>Skills</h1>
-            <p className='text-center mx-auto font-light mt-2 max-w-prose'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-            <div className='flex flex-wrap justify-center space-x-6 py-10'>
-              <img src='/next.svg' width={150} />
-              <img src='/next.svg' width={150} />
-              <img src='/next.svg' width={150} />
-              <img src='/next.svg' width={150} />
-              <img src='/next.svg' width={150} />
-              <img src='/next.svg' width={150} />
-            </div>
-          </section>
-        </div>
-        <Footer />
-      </main>
+      <Layout>
+        <section className='max-w-screen-lg mx-auto w-full flex justify-between'>
+          <div className='block my-auto'>
+            <span>
+              <h1 className='text-white font-sans text-6xl font-bold'>Hi, I'm Laura</h1>
+              <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>A fullstack web developer.</span></p>
+            </span>
+            <button className='text-sm px-6 py-2 rounded-md mt-4 btn-three'>
+              Contact
+            </button>
+          </div>
+          <div className="relative">
+            <div className='screen'></div>
+            <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}} />
+          </div>
+        </section>
+        <section className='py-16 mt-56'>
+          <div className='max-w-screen-lg mx-auto  flex justify-between'>
+          <div className="pr-16">
+            <img src="/mock.jpg" width={500} />
+          </div>
+          <span className='max-w-prose my-auto'>
+              <h1 className='text-white font-sans text-3xl font-semibold text-right'>Sed ut perspiciatis unde omnis</h1>
+              <p className='text-right font-light mt-2'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+            </span>
+          </div>
+        </section>
+        <section className='max-w-screen-lg mx-auto'>
+          <h1 className='text-white text-center text-4xl font-sans font-bold mt-32'>Skills</h1>
+          <p className='text-center mx-auto font-light mt-2 max-w-prose'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+          <div className='flex flex-wrap justify-center space-x-6 py-10'>
+            <img src='/next.svg' width={150} />
+            <img src='/next.svg' width={150} />
+            <img src='/next.svg' width={150} />
+            <img src='/next.svg' width={150} />
+            <img src='/next.svg' width={150} />
+            <img src='/next.svg' width={150} />
+          </div>
+        </section>
+      </Layout>
     </>
   )
 }
