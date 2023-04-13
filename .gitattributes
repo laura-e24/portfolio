@@ -1,2 +1,2 @@
-src/styles/css** linguist-vendored
-src/styles/webfonts** linguist-vendored
+src/styles/css* linguist-vendored
+src/styles/webfonts* linguist-vendored
