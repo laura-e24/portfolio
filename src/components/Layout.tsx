@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <main>
         <div className="bg"></div>
         <div className="wave">
-          <img src="/pattern.svg" className='w-full' />
+          {/* <img src="/pattern.svg" className='w-full' /> */}
         </div>
         <NavBar />
         <div className='mt-20'>
