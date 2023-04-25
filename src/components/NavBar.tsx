@@ -29,7 +29,7 @@ const NavBar = () => {
       </Link>
 
       <Link className="hover:text-one glow hidden md:inline border-r border-gray-600 pr-4 border-opacity-50" href='#about'>
-        About
+        Sobre mí
       </Link>
       <Link passHref href="#about" className="md:hidden">
         <FAIcon type={`${(pathIncludes("about")) ? "solid" : "thin" }`} name="memo-circle-info" color={`active:text-one ${pathIncludes("about") ? "text-purple-800" : "glow" }`} />

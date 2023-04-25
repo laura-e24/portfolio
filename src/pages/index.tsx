@@ -169,11 +169,11 @@ export default function Home() {
         <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between'>
           <div className='block my-auto px-5 md:px-0'>
             <span>
-              <h1 className='text-white font-sans text-5xl md:text-6xl font-bold'>Hi, I'm Laura</h1>
-              <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>A fullstack web developer.</span></p>
+              <h1 className='text-white font-sans text-5xl md:text-6xl font-bold'>Hola, soy Laura</h1>
+              <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>Fullstack web developer.</span></p>
             </span>
             <button onClick={() => Router.push("#contact")} className='text-sm px-6 py-2 rounded-md mt-4 btn-three'>
-              Contact
+              Contacto
             </button>
           </div>
           <div className="relative hidden md:inline">
@@ -191,7 +191,7 @@ export default function Home() {
           </div>
         </section>
         <section id="skills" className='max-w-screen-lg mx-auto'>
-          <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Skills</h1>
+          <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Habilidades</h1>
           <p className='text-center mx-auto font-light mt-2 max-w-prose'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
           <div className='grid grid-cols-2 lg:grid-cols-8 p-6 gap-4'>
             {skills.map((s, i) => (
