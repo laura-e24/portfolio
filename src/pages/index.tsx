@@ -158,34 +158,6 @@ const projects = [{
 }]
 
 export default function Home() {
-  // const [projects, setProjects] = useState([])
-
-  // const fetchRepositories = async () => {
-  //   // Octokit.js
-  //   // https://github.com/octokit/core.js#readme
-  //   const octokit = new Octokit({
-  //     auth: process.env.API_TOKEN
-  //   })
-
-  //   const { data } = await octokit.request('GET /user/repos', {
-  //     headers: {
-  //       'X-GitHub-Api-Version': '2022-11-28'
-  //     }
-  //   })
-
-  //   return data;
-  // }
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const repositories = await fetchRepositories()
-  //     setProjects(repositories.filter(r => {
-  //       return [630121391, 588570066, 585180389, 568490420, 615517082, 466912205].includes(r.id)
-  //     }))
-  //   }
-  //   fetchData()
-  // }, [])
-console.log(process.env.API_TOKEN)
   return (
     <>
       <Head>
