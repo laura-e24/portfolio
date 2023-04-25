@@ -224,7 +224,7 @@ export default function Home() {
             {projects.map((p, i) => (
               <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <div className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <img src={p.thumbnail} className=' ' />
+                  <img loading='lazy' src={p.thumbnail} className=' ' />
                   <span>
                     <p className={`text-center font-medium mt-3 text-gray-100` }>
                       {p?.name}
