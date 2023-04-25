@@ -232,6 +232,7 @@ a {
   text-decoration: none;
 }
 
-.border-05 {
-  border: solid 0.5px;
+#bullet::after{
+  content: '•';
+  margin: 0 0.5rem
 }
