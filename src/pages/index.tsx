@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import { Octokit } from '@octokit/core'
 import Head from 'next/head'
 import Router, { useRouter } from 'next/router'
 
@@ -136,12 +137,29 @@ const skills = [{
 
 export default function Home() {
 
+const github = async () => {
+  // Octokit.js
+  // https://github.com/octokit/core.js#readme
+  const octokit = new Octokit({
+    auth: process.env.API_TOKEN
+  })
+
+  const { data } = await octokit.request('GET /user/repos', {
+    headers: {
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  })
+
+  console.log(data)
+}
+github()
+
   return (
     <>
       <Head>
         <title>Laura - Fullstack web developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>
         <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between'>
@@ -178,23 +196,48 @@ export default function Home() {
         <section id="skills" className='max-w-screen-lg mx-auto'>
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Skills</h1>
           <p className='text-center mx-auto font-light mt-2 max-w-prose'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-          <div className='grid grid-cols-8 p-6 gap-4'>
+          <div className='grid grid-cols-2 lg:grid-cols-8 p-6 gap-4'>
             {skills.map((s, i) => (
               <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <span className='justify-center h-full my-auto flex flex-wrap content-center'>
                   <img src={`/skills/${s.icon}`} className='mx-auto h-8 ' />
-                  <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>{s.name}</p>
+                  <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
+                    {s.name}
+                  </p>
                 </span>
               </div>
             ))}
+            <div>
+              <p className="text-xs whitespace-nowrap font-light mb-1 ml-1">Aprendiendo...</p>
+              <div className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
+                <span className='justify-center h-full my-auto flex flex-wrap content-center'>
+                  <img src="/skills/java.svg" className='mx-auto h-10 ' />
+                  <p style={{ backgroundColor: "#4E7896" }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
+                    Java
+                  </p>
+                </span>
+              </div>
+            </div>
           </div>
         </section>
         <section id="projects" className='max-w-screen-lg mx-auto'>
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Proyectos</h1>
           <p className='text-center mx-auto font-light mt-2 max-w-prose text-sm md:text-base'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-          <div className='md:flex flex-wrap justify-center md:space-x-6 space-y-6 md:space-y-0 py-10'>
-            {new Array(6).fill(0).map((_, i) => (
-              <img key={i} src="/loading-screen.gif" width={150} className='mx-auto md:mx-0' />
+          <div className='grid grid-cols-2 lg:grid-cols-4 p-6 gap-4'>
+            {skills.map((s, i) => (
+              <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
+                <div className='justify-center h-full my-auto flex flex-wrap content-center'>
+                  <img src="/loading-screen.gif" className=' ' />
+                  <span>
+                    <p className={`text-center font-medium mt-3 text-gray-100` }>
+                      {s.name}
+                    </p>
+                    <p className={`text-center font-light text-sm mt-1 text-gray-400` }>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut sed quia consequuntur.
+                    </p>
+                  </span>
+                </div>
+              </div>
             ))}
           </div>
         </section>
