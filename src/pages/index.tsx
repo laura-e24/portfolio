@@ -6,6 +6,10 @@ import Head from 'next/head'
 import Router, { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Tooltip } from 'react-tooltip'
+import computer from '../computer.png'
+import loading from '../loading-screen.gif'
+import java from '../skills/java.svg'
+import Image from 'next/image'
 
 const skills = [{
   name: "HTML",
@@ -178,12 +182,22 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <div className='screen'></div>
-            <img src="/computer.png" width={400} style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}} />
+            <Image
+              src={computer}
+              alt=""
+              width={400}
+              style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}}
+            />
           </div>
         </section>
         <section id="about" className='py-16 mt-56'>
           <div className='max-w-screen-lg mx-auto  md:flex justify-between'>
-            <img src="/loading-screen.gif" className='mx-auto md:mx-0' width={300} />
+            <Image
+              src={loading}
+              alt=""
+              width={300}
+              className='mx-auto md:mx-0'
+            />
             <span className='block max-w-prose mt-10 md:my-auto'>
               <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-right'>Sed ut perspiciatis unde omnis</h1>
               <p className='text-center md:text-right font-light mt-2 text-sm md:text-base'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
@@ -197,7 +211,12 @@ export default function Home() {
             {skills.map((s, i) => (
               <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <span className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <img src={`/skills/${s.icon}`} className='mx-auto h-8 ' />
+                  <Image
+                    src={`/skills/${s.icon}`}
+                    alt=""
+                    height={32} // h-8
+                    className='mx-auto'
+                  />
                   <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     {s.name}
                   </p>
@@ -208,7 +227,12 @@ export default function Home() {
               <p className="text-xs whitespace-nowrap font-light mb-1 ml-1">Aprendiendo...</p>
               <div className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <span className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <img src="/skills/java.svg" className='mx-auto h-10 ' />
+                  <Image
+                    src={java}
+                    alt=""
+                    height={40} // h-10
+                    className='mx-auto'
+                  />
                   <p style={{ backgroundColor: "#4E7896" }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     Java
                   </p>
@@ -224,7 +248,11 @@ export default function Home() {
             {projects.map((p, i) => (
               <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <div className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <img loading='lazy' src={p.thumbnail} className=' ' />
+                  <Image
+                    src={p.thumbnail}
+                    alt=""
+                    width={200}
+                  />
                   <span>
                     <p className={`text-center font-medium mt-3 text-gray-100` }>
                       {p?.name}
@@ -237,12 +265,13 @@ export default function Home() {
                     {p.tech.map((t, index) => {
                       return (
                         <span key={index}>
-                          <img 
+                          <Image
                             data-tooltip-id={t} 
                             data-tooltip-content={techFullName(t)}  
-                            key={index} 
-                            src={`/skills/${t}.svg`} 
-                            className='h-5' 
+                            key={index}
+                            src={`/skills/${t}.svg`}
+                            alt=""
+                            height={20} // h-5
                           />
                           <Tooltip style={{backgroundColor:"#13111C"}} id={t} />
                         </span>
