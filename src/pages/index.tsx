@@ -186,6 +186,8 @@ export default function Home() {
               src={computer}
               alt=""
               width={400}
+              className='h-auto'
+              priority
               style={{filter: 'drop-shadow(5px 5px 15px rgba(5, 195, 253, 0.3))'}}
             />
           </div>
@@ -196,7 +198,7 @@ export default function Home() {
               src={loading}
               alt=""
               width={300}
-              className='mx-auto md:mx-0'
+              className='mx-auto md:mx-0 h-auto'
             />
             <span className='block max-w-prose mt-10 md:my-auto'>
               <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-right'>Sed ut perspiciatis unde omnis</h1>
@@ -214,7 +216,9 @@ export default function Home() {
                   <Image
                     src={`/skills/${s.icon}`}
                     alt=""
-                    className='mx-auto h-8'
+                    height={32}
+                    width={32}
+                    className='mx-auto'
                   />
                   <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     {s.name}
@@ -229,7 +233,7 @@ export default function Home() {
                   <Image
                     src={java}
                     alt=""
-                    className='mx-auto'
+                    className='mx-auto h-10 w-10'
                   />
                   <p style={{ backgroundColor: "#4E7896" }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     Java
@@ -250,6 +254,7 @@ export default function Home() {
                     src={p.thumbnail}
                     alt=""
                     width={200}
+                    height={150}
                   />
                   <span>
                     <p className={`text-center font-medium mt-3 text-gray-100` }>
@@ -270,6 +275,7 @@ export default function Home() {
                             src={`/skills/${t}.svg`}
                             alt=""
                             height={20} // h-5
+                            width={20} // h-5
                           />
                           <Tooltip style={{backgroundColor:"#13111C"}} id={t} />
                         </span>
