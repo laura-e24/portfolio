@@ -214,8 +214,7 @@ export default function Home() {
                   <Image
                     src={`/skills/${s.icon}`}
                     alt=""
-                    height={32} // h-8
-                    className='mx-auto'
+                    className='mx-auto h-8'
                   />
                   <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     {s.name}
@@ -230,7 +229,6 @@ export default function Home() {
                   <Image
                     src={java}
                     alt=""
-                    height={40} // h-10
                     className='mx-auto'
                   />
                   <p style={{ backgroundColor: "#4E7896" }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
