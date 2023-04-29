@@ -6,9 +6,9 @@ import Head from 'next/head'
 import Router, { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Tooltip } from 'react-tooltip'
-import computer from '../computer.png'
-import loading from '../loading-screen.gif'
-import java from '../skills/java.svg'
+import computer from '../../public/computer.png'
+import loading from '../../public/loading-screen.gif'
+import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 
 const skills = [{
