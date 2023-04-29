@@ -1,6 +1,6 @@
 import FAIcon from '@/components/FAIcon'
 import Layout from '@/components/Layout'
-import { techFullName } from '@/utils/general'
+import { capitalize, techFullName } from '@/utils/general'
 import { Octokit } from '@octokit/core'
 import Head from 'next/head'
 import Router, { useRouter } from 'next/router'
@@ -9,158 +9,12 @@ import { Tooltip } from 'react-tooltip'
 import computer from '../../public/computer.png'
 import java from '../../public/skills/java.svg'
 import Image from 'next/image'
-
-const skills = [{
-  name: "HTML",
-  icon: "html.svg",
-  color: "#E34F26",
-}, {
-  name: "CSS",
-  icon: "css.svg",
-  color: "#1572B6",
-}, {
-  name: "JavaScript",
-  icon: "js.svg",
-  color: "#F7DF1E",
-}, {
-  name: "TypeScript",
-  icon: "ts.svg",
-  color: "#3178C6",
-}, {
-  name: "Node.js",
-  icon: "node.svg",
-  color: "#339933",
-}, {
-  name: "NPM",
-  icon: "npm.svg",
-  color: "#CB3837",
-}, {
-  name: "React",
-  icon: "react.svg",
-  color: "#61DAFB",
-}, {
-  name: "Redux",
-  icon: "redux.svg",
-  color: "#764ABC",
-}, {
-  name: "TailwindCSS",
-  icon: "tailwind.svg",
-  color: "#06B6D4",
-}, {
-  name: "Styled components",
-  icon: "styled.svg",
-  color: "#DB7093",
-}, {
-  name: "Bootstrap",
-  icon: "bootstrap.svg",
-  color: "#7952B3",
-}, {
-  name: "NextJS",
-  icon: "next.svg",
-  color: "#000000",
-}, {
-  name: "Gatsby",
-  icon: "gatsby.svg",
-  color: "#663399",
-}, {
-  name: "Express.js",
-  icon: "express.svg",
-  color: "#000000",
-}, {
-  name: "GraphQL",
-  icon: "graphql.svg",
-  color: "#E10098",
-}, {
-  name: "Mocha",
-  icon: "mocha.svg",
-  color: "#8D6748",
-}, {
-  name: "Chai",
-  icon: "chai.svg",
-  color: "#A30701",
-}, {
-  name: "Swagger",
-  icon: "swagger.svg",
-  color: "#85EA2D",
-}, {
-  name: "Vercel",
-  icon: "vercel.svg",
-  color: "#000000",
-}, {
-  name: "Railway",
-  icon: "railway.svg",
-  color: "#0B0D0E",
-}, {
-  name: "Render",
-  icon: "render.svg",
-  color: "#46E3B7",
-}, {
-  name: "Netlify",
-  icon: "netlify.svg",
-  color: "#00C7B7",
-}, {
-  name: "MongoDB",
-  icon: "mongodb.svg",
-  color: "#47A248",
-}, {
-  name: "PostgreSQL",
-  icon: "postgres.svg",
-  color: "#4169E1",
-}, {
-  name: "Git",
-  icon: "git.svg",
-  color: "#F05032",
-}, {
-  name: "Figma",
-  icon: "figma.svg",
-  color: "#F24E1E",
-}]
-
-const projects = [{
-  name: "Marvel's Characters App",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "react", "css", "styled"],
-  status: "Terminado",
-  type: "Prueba técnica"
-}, {
-  name: "FormatCSV App",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "react", "css", "bootstrap", "express", "mocha", "swagger"],
-  status: "Terminado",
-  type: "Prueba técnica"
-}, {
-  name: "La Dionisia",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "react", "ts", "next", "express", "css", "tailwind", "redux", "postgres"],
-  status: "Terminado",
-  type: "Proyecto académico"
-}, {
-  name: "Henry Countries",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "react", "express", "css", "styled", "redux", "postgres"],
-  status: "Terminado",
-  type: "Proyecto académico"
-}, {
-  name: "Thumbnail Generator",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "ts", "express", "swagger", "mocha"],
-  status: "Terminado",
-  type: "Prueba técnica"
-}, {
-  name: "UpTask",
-  description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "",
-  tech: ["node", "ts", "express", "mongodb", "react", "tailwind", "vite"],
-  status: "En proceso",
-  type: "Proyecto personal"
-}]
+import { skills, projects } from "../data/index"
+import * as icons from 'simple-icons';
+import SIcon from '@/components/SIcon'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -218,6 +72,7 @@ export default function Home() {
                     width={32}
                     className='mx-auto'
                   />
+                  {/* <SIcon slug={capitalize(s.icon)} color={s.color} /> */}
                   <p style={{ backgroundColor: s.color }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
                     {s.name}
                   </p>

@@ -1,3 +1,5 @@
+export const capitalize = (string: string) => string.charAt(0).toUpperCase() + string.slice(1);
+
 export const techFullName = (technology: string) => {
   switch (technology) {
     case "html":
@@ -49,6 +51,6 @@ export const techFullName = (technology: string) => {
       return "PostgreSQL"
 
     default:
-      return technology.charAt(0).toUpperCase() + technology.slice(1)
+      return capitalize(technology)
   }
 }
