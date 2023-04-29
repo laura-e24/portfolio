@@ -119,42 +119,42 @@ const skills = [{
 const projects = [{
   name: "Marvel's Characters App",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "react", "css", "styled"],
   status: "Terminado",
   type: "Prueba técnica"
 }, {
   name: "FormatCSV App",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "react", "css", "bootstrap", "express", "mocha", "swagger"],
   status: "Terminado",
   type: "Prueba técnica"
 }, {
   name: "La Dionisia",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "react", "ts", "next", "express", "css", "tailwind", "redux", "postgres"],
   status: "Terminado",
   type: "Proyecto académico"
 }, {
   name: "Henry Countries",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "react", "express", "css", "styled", "redux", "postgres"],
   status: "Terminado",
   type: "Proyecto académico"
 }, {
   name: "Thumbnail Generator",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "ts", "express", "swagger", "mocha"],
   status: "Terminado",
   type: "Prueba técnica"
 }, {
   name: "UpTask",
   description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-  thumbnail: "/loading-screen.gif",
+  thumbnail: "",
   tech: ["node", "ts", "express", "mongodb", "react", "tailwind", "vite"],
   status: "En proceso",
   type: "Proyecto personal"
