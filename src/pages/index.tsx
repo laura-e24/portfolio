@@ -7,7 +7,6 @@ import Router, { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Tooltip } from 'react-tooltip'
 import computer from '../../public/computer.png'
-import loading from '../../public/loading-screen.gif'
 import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 
@@ -181,7 +180,9 @@ export default function Home() {
             </button>
           </div>
           <div className="relative hidden md:inline">
-            <div className='screen'></div>
+            <video className='screen' controls width="200" height="175" loop autoPlay muted playsInline>
+              <source src="/screen.webm" type="video/webm" />
+            </video>
             <Image
               src={computer}
               alt=""
@@ -194,12 +195,9 @@ export default function Home() {
         </section>
         <section id="about" className='py-16 mt-56'>
           <div className='max-w-screen-lg mx-auto  md:flex justify-between'>
-            <Image
-              src={loading}
-              alt=""
-              width={300}
-              className='mx-auto md:mx-0 h-auto'
-            />
+            <video className='mx-auto md:mx-0 h-auto' controls width="300" height="175" loop autoPlay muted playsInline>
+              <source src="/loading-screen.webm" type="video/webm" />
+            </video>
             <span className='block max-w-prose mt-10 md:my-auto'>
               <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-right'>Sed ut perspiciatis unde omnis</h1>
               <p className='text-center md:text-right font-light mt-2 text-sm md:text-base'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
@@ -250,12 +248,9 @@ export default function Home() {
             {projects.map((p, i) => (
               <div key={i} className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
                 <div className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <Image
-                    src={p.thumbnail}
-                    alt=""
-                    width={200}
-                    height={150}
-                  />
+                  <video controls width="200" height="150" loop autoPlay muted playsInline>
+                    <source src="/loading-screen.webm" type="video/webm" />
+                  </video>
                   <span>
                     <p className={`text-center font-medium mt-3 text-gray-100` }>
                       {p?.name}
