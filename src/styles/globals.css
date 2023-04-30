@@ -239,3 +239,20 @@ a {
 video::-webkit-media-controls {
   display: none;
 }
+
+.bg-project {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  height: 200;
+  background: url("/project-mock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: visible;
+  z-index: 1;
+}

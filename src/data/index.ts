@@ -1,132 +1,132 @@
 export const skills = [
   {
-    name: "HTML",
-    icon: "html.svg",
+    name: "HTML5",
+    slug: "html5",
     color: "#E34F26",
   }, 
   {
-    name: "CSS",
-    icon: "css.svg",
+    name: "CSS3",
+    slug: "css3",
     color: "#1572B6",
   }, 
   {
     name: "JavaScript",
-    icon: "js.svg",
+    slug: "javascript",
     color: "#F7DF1E",
   }, 
   {
     name: "TypeScript",
-    icon: "ts.svg",
+    slug: "typescript",
     color: "#3178C6",
   }, 
   {
     name: "Node.js",
-    icon: "node.svg",
+    slug: "node.js",
     color: "#339933",
   }, 
   {
     name: "NPM",
-    icon: "npm.svg",
+    slug: "npm",
     color: "#CB3837",
   }, 
   {
     name: "React",
-    icon: "react.svg",
+    slug: "react",
     color: "#61DAFB",
   }, 
   {
     name: "Redux",
-    icon: "redux.svg",
+    slug: "redux",
     color: "#764ABC",
   }, 
   {
     name: "TailwindCSS",
-    icon: "tailwind.svg",
+    slug: "tailwindcss",
     color: "#06B6D4",
   }, 
   {
     name: "Styled components",
-    icon: "styled.svg",
+    slug: "styledcomponents",
     color: "#DB7093",
   }, 
   {
     name: "Bootstrap",
-    icon: "bootstrap.svg",
+    slug: "bootstrap",
     color: "#7952B3",
   }, 
   {
     name: "NextJS",
-    icon: "next.svg",
+    slug: "nextdotjs",
     color: "#000000",
   }, 
   {
     name: "Gatsby",
-    icon: "gatsby.svg",
+    slug: "gatsby",
     color: "#663399",
   }, 
   {
     name: "Express.js",
-    icon: "express.svg",
+    slug: "express",
     color: "#000000",
   }, 
   {
     name: "GraphQL",
-    icon: "graphql.svg",
+    slug: "graphql",
     color: "#E10098",
   }, 
   {
     name: "Mocha",
-    icon: "mocha.svg",
+    slug: "mocha",
     color: "#8D6748",
   }, 
   {
     name: "Chai",
-    icon: "chai.svg",
+    slug: "chai",
     color: "#A30701",
   }, 
   {
     name: "Swagger",
-    icon: "swagger.svg",
+    slug: "swagger",
     color: "#85EA2D",
   }, 
   {
     name: "Vercel",
-    icon: "vercel.svg",
+    slug: "vercel",
     color: "#000000",
   }, 
   {
     name: "Railway",
-    icon: "railway.svg",
+    slug: "railway",
     color: "#0B0D0E",
   }, 
   {
     name: "Render",
-    icon: "render.svg",
+    slug: "render",
     color: "#46E3B7",
   }, 
   {
     name: "Netlify",
-    icon: "netlify.svg",
+    slug: "netlify",
     color: "#00C7B7",
   }, 
   {
     name: "MongoDB",
-    icon: "mongodb.svg",
+    slug: "mongodb",
     color: "#47A248",
   }, 
   {
     name: "PostgreSQL",
-    icon: "postgres.svg",
+    slug: "postgresql",
     color: "#4169E1",
   }, 
   {
     name: "Git",
-    icon: "git.svg",
+    slug: "git",
     color: "#F05032",
   }, 
   {
     name: "Figma",
-    icon: "figma.svg",
+    slug: "figma",
     color: "#F24E1E",
   }
 ];
@@ -138,7 +138,8 @@ export const projects = [
     thumbnail: "",
     tech: ["node", "react", "css", "styled"],
     status: "Terminado",
-    type: "Prueba técnica"
+    type: "Prueba técnica",
+    repo: "https://github.com/laura-e24/BSMART-frontend-challenge"
   }, 
   {
     name: "FormatCSV App",
@@ -146,7 +147,8 @@ export const projects = [
     thumbnail: "",
     tech: ["node", "react", "css", "bootstrap", "express", "mocha", "swagger"],
     status: "Terminado",
-    type: "Prueba técnica"
+    type: "Prueba técnica",
+    repo: "https://github.com/laura-e24/formatCSV-app"
   }, 
   {
     name: "La Dionisia",
@@ -154,30 +156,34 @@ export const projects = [
     thumbnail: "",
     tech: ["node", "react", "ts", "next", "express", "css", "tailwind", "redux", "postgres", "auth0"],
     status: "Terminado",
-    type: "Proyecto académico"
+    type: "Proyecto académico",
+    repo: "https://github.com/laura-e24/LaDionisiaFront"
   }, 
   {
     name: "Henry Countries",
-    description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
+    description: "Extrae de una API externa y guarda en base de datos la información de los países del mundo, permitiendo ver todos sus detalles y gestionar actividades turísticas; creando, editando y eliminándolas. Incluye búsqueda y múltiples filtros y ordenamientos combinados para facilitar la selección de países.",
     thumbnail: "",
     tech: ["node", "react", "express", "css", "styled", "redux", "postgres"],
     status: "Terminado",
-    type: "Proyecto académico"
+    type: "Proyecto académico",
+    repo: "https://github.com/laura-e24/PI-Countries"
   }, 
   {
     name: "Thumbnail Generator",
-    description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
+    description: "API REST que recibe una imagen PNG o JPEG cargada desde el ordenador y a partir de ella genera tres thumbnails con distintos tamaños, los guarda en el ordenador y retorna las URLs de donde se almacenaron.",
     thumbnail: "",
     tech: ["node", "ts", "express", "swagger", "mocha"],
     status: "Terminado",
-    type: "Prueba técnica"
+    type: "Prueba técnica",
+    repo: "https://github.com/laura-e24/proof-of-concept"
   }, 
   {
     name: "UpTask",
-    description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
+    description: "Webapp para gestionar proyectos y tareas. Permite iniciar sesión con JWT para guardar nuestros proyectos en base de datos, agregarles tareas y colaboradores, marcar tareas como completadas, eliminarlas, entre otras cosas.",
     thumbnail: "",
     tech: ["node", "ts", "express", "mongodb", "react", "tailwind", "vite"],
     status: "En proceso",
-    type: "Proyecto personal"
+    type: "Proyecto académico (curso)",
+    repo: "https://github.com/laura-e24/UpTask"
   }
 ]

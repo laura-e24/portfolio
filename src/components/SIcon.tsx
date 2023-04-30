@@ -1,22 +1,22 @@
-import * as icons from 'simple-icons';
-import parse from 'html-react-parser';
+import Image from 'next/image';
 
-interface Icon {
+interface InterfaceIcon {
   slug: string;
   color?: string;
+  width?: number;
+  height?: number;
+  alt?: string;
 }
 
-import styled from 'styled-components'
-
-
-const StyledSvg = styled(props => props.svg)`
-  svg > path {
-    fill: ${props => props.color || icons[`si` + props.slug].hex}
-  }
-`
-const SIcon = ({ slug, color }: Icon) => {
-  const svg = parse(icons[`si` + slug].svg)
-  return <StyledSvg svg={svg} slug={slug} color={color}  />
+const SIcon = ({ slug, color, width, height, alt }: InterfaceIcon) => {
+  return (
+    <Image 
+      src={`https://cdn.simpleicons.org/${slug}/${color}`}
+      height={height || 32}
+      width={width || 32}
+      alt={alt || ""}
+    />
+  )
 }
 
 export default SIcon;
