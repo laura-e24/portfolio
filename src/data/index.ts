@@ -176,14 +176,5 @@ export const projects = [
     status: "Terminado",
     type: "Prueba técnica",
     repo: "https://github.com/laura-e24/proof-of-concept"
-  }, 
-  {
-    name: "UpTask",
-    description: "Webapp para gestionar proyectos y tareas. Permite iniciar sesión con JWT para guardar nuestros proyectos en base de datos, agregarles tareas y colaboradores, marcar tareas como completadas, eliminarlas, entre otras cosas.",
-    thumbnail: "",
-    tech: ["node", "ts", "express", "mongodb", "react", "tailwind", "vite"],
-    status: "En proceso",
-    type: "Proyecto académico (curso)",
-    repo: "https://github.com/laura-e24/UpTask"
   }
 ]
