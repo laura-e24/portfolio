@@ -135,46 +135,78 @@ export const projects = [
   {
     name: "Marvel's Characters App",
     description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
-    thumbnail: "",
-    tech: ["node", "react", "css", "styled"],
+    thumbnail: "bsmart.png",
+    tech: ["node.js", "react", "css3", "styledcomponents"],
     status: "Terminado",
     type: "Prueba técnica",
-    repo: "https://github.com/laura-e24/BSMART-frontend-challenge"
-  }, 
-  {
-    name: "FormatCSV App",
-    description: "Extrae datos en formato CSV de API externa, la formatea a JSON y el resultado es mostrado en pantalla en formato tabla con diseño sencillo y minimalista. REST API con testing y documentación.",
-    thumbnail: "",
-    tech: ["node", "react", "css", "bootstrap", "express", "mocha", "swagger"],
-    status: "Terminado",
-    type: "Prueba técnica",
-    repo: "https://github.com/laura-e24/formatCSV-app"
-  }, 
-  {
-    name: "La Dionisia",
-    description: "Vinoteca online — ecommerce — con un amplio catálogo de distintos vinos. Incluye múltiples filtros y ordenamientos combinados, registro y auntenticación, guardado de favoritos, plataforma de pago que admite PayPal y tarjetas de crédito/débito, y rol de administrador para gestionar la tienda.",
-    thumbnail: "",
-    tech: ["node", "react", "ts", "next", "express", "css", "tailwind", "redux", "postgres", "auth0"],
-    status: "Terminado",
-    type: "Proyecto académico",
-    repo: "https://github.com/laura-e24/LaDionisiaFront"
-  }, 
-  {
-    name: "Henry Countries",
-    description: "Extrae de una API externa y guarda en base de datos la información de los países del mundo, permitiendo ver todos sus detalles y gestionar actividades turísticas; creando, editando y eliminándolas. Incluye búsqueda y múltiples filtros y ordenamientos combinados para facilitar la selección de países.",
-    thumbnail: "",
-    tech: ["node", "react", "express", "css", "styled", "redux", "postgres"],
-    status: "Terminado",
-    type: "Proyecto académico",
-    repo: "https://github.com/laura-e24/PI-Countries"
+    repo: "https://github.com/laura-e24/BSMART-frontend-challenge",
+    deploy: null,
+    date: "Abril 2023"
   }, 
   {
     name: "Thumbnail Generator",
     description: "API REST que recibe una imagen PNG o JPEG cargada desde el ordenador y a partir de ella genera tres thumbnails con distintos tamaños, los guarda en el ordenador y retorna las URLs de donde se almacenaron.",
-    thumbnail: "",
-    tech: ["node", "ts", "express", "swagger", "mocha"],
+    thumbnail: "thumbnailgen.png",
+    tech: ["node.js", "typescript", "express", "swagger", "mocha"],
     status: "Terminado",
     type: "Prueba técnica",
-    repo: "https://github.com/laura-e24/proof-of-concept"
+    repo: "https://github.com/laura-e24/proof-of-concept",
+    deploy: null,
+    date: "Marzo 2023"
+  },
+  {
+    name: "FormatCSV App",
+    description: "Extrae datos en formato CSV de API externa, la formatea a JSON y el resultado es mostrado en pantalla en formato tabla con diseño sencillo y minimalista. REST API con testing y documentación.",
+    thumbnail: "formatcsv.png",
+    tech: ["node.js", "react", "css3", "bootstrap", "express", "mocha", "swagger"],
+    status: "Terminado",
+    type: "Prueba técnica",
+    repo: "https://github.com/laura-e24/formatCSV-app",
+    deploy: null,
+    date: "Enero 2023"
+  }, 
+  {
+    name: "La Dionisia",
+    description: "Vinoteca online — ecommerce — con un amplio catálogo de distintos vinos. Incluye múltiples filtros y ordenamientos combinados, registro y auntenticación, guardado de favoritos, plataforma de pago que admite PayPal y tarjetas de crédito/débito, y rol de administrador para gestionar la tienda.",
+    thumbnail: "dionisia.png",
+    tech: ["node.js", "react", "typescript", "nextdotjs", "express", "css3", "tailwindcss", "redux", "postgresql", "auth0", "stripe"],
+    status: "Terminado",
+    type: "Proyecto académico grupal",
+    repo: "https://github.com/laura-e24/LaDionisiaFront",
+    deploy: "https://la-dionisia-front.vercel.app",
+    date: "Enero 2023"
+  }, 
+  {
+    name: "Henry Countries",
+    description: "Extrae de una API externa y guarda en base de datos la información de los países del mundo, permitiendo ver todos sus detalles y gestionar actividades turísticas; creando, editando y eliminándolas. Incluye búsqueda y múltiples filtros y ordenamientos combinados para facilitar la selección de países.",
+    thumbnail: "PI.png",
+    tech: ["node.js", "react", "express", "css3", "styledcomponents", "redux", "postgresql"],
+    status: "Activo",
+    type: "Proyecto académico",
+    repo: "https://github.com/laura-e24/PI-Countries",
+    deploy: "https://henrycountries.vercel.app",
+    date: "Noviembre ─ diciembre 2022"
+  }, 
+  {
+    name: "Cotizador de seguros de automóviles",
+    description: "Aplicación sencilla que simula un cotizador de seguro para automóviles, pudiendo elegir marca y año del auto y tipo de seguro deseado, para luego calcular el precio según las especificaciones seleccionadas.",
+    thumbnail: "cotizador.png",
+    tech: ["node.js", "react", "css3", "skeleton"],
+    status: "Terminado",
+    type: "Proyecto académico (curso)",
+    repo: null,
+    deploy: "https://cotizadorsegurosreact-laura-e24.netlify.app",
+    date: "2021"
+  },
+  {
+    name: "Calculadora de presupuesto",
+    description: "Sencilla calculadora para llevar registro de nuestro presupuesto y gastos. UI/UX simple e intuitiva.",
+    thumbnail: "presupuesto.png",
+    tech: ["node.js", "react", "css3", "skeleton"],
+    status: "Terminado",
+    type: "Proyecto académico (curso)",
+    repo: null,
+    deploy: "https://calcularpresupuestoreact-laura-e24.netlify.app",
+    date: "2021"
   }
 ]
