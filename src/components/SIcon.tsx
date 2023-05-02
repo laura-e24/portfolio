@@ -12,7 +12,8 @@ interface InterfaceIcon {
 
 const SIcon = ({ slug, color, width, height, alt, dataToolTipId, dataToolTipContent }: InterfaceIcon) => {
   return (
-    <Image 
+    <img 
+      loading='lazy'
       src={`https://cdn.simpleicons.org/${slug}/${color}`}
       height={height || 32}
       width={width || 32}

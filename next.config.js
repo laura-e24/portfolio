@@ -6,9 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.simpleicons.org',
-        port: '',
-        pathname: '/**',
+        hostname: 'cdn.simpleicons.org/**',
       },
     ],
   },
