@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>
-        <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between'>
+        <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between select-none'>
           <div className='block my-auto px-5 md:px-0'>
             <span>
               <h1 className='text-white font-sans text-5xl md:text-6xl font-bold'>Hola, soy Laura</h1>

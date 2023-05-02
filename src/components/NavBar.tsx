@@ -20,7 +20,7 @@ const NavBar = () => {
         }
       `}
     </style>
-    <nav className="bg-two md:bg-transparent bottom md:top-0 fixed md:border-b md:rounded-lg border-transparent w-full flex md:justify-center justify-around text-sm text-opacity-10 md:space-x-6 py-4 md:py-8" style={{zIndex: 999}}>
+    <nav className="bg-two md:bg-transparent bottom md:top-0 fixed md:border-b md:rounded-lg border-transparent w-full flex md:justify-center justify-around text-sm text-opacity-10 md:space-x-6 py-4 md:py-8" style={{zIndex: 0}}>
       <Link className="hover:text-one glow hidden md:inline border-r border-gray-600 pr-4 border-opacity-50" href='#home'>
         Inicio
       </Link>
