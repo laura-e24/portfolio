@@ -81,6 +81,12 @@ main {
   opacity: 1;
   transform: scale(1,1);
 }
+
+p.underline-color {
+  color: #853BCE;  /* colour of underline */
+  text-decoration: underline;
+}
+
 .wave {
   background-image: url("/pattern.svg");
   background-size: cover;
@@ -97,11 +103,6 @@ main {
   z-index: -1;
 }
 
-p.underline-color {
-  color: #853BCE;  /* colour of underline */
-  text-decoration: underline;
-}
-
 .bg {
   position: fixed;
   top: -50%;
@@ -110,13 +111,21 @@ p.underline-color {
   bottom: -50%;
   width: 200%;
   height: 200vh;
-  background: transparent url('/nnnoise.svg') repeat 0 0;
+  background: transparent;
   background-repeat: repeat;
-  animation: bg-animation 80s linear infinite;
   opacity: .9;
   visibility: visible;
   z-index: -1;
 }
+
+@media (min-width: 1024px) {
+  .bg {
+    animation: bg-animation 80s linear infinite;
+    background: transparent url('/nnnoise.svg') repeat 0 0;
+  }
+}
+
+
 
 .bg-footer {
   position: absolute;
@@ -145,6 +154,7 @@ p.underline-color {
     width: 200%;
   }
 }
+
 @keyframes bg-animation {
   from {
     transform: rotate(0deg);
@@ -194,6 +204,7 @@ p.underline-color {
       transform: translateY(-5px);
   }
 }
+
 @-webkit-keyframes jumpy {
   0% {
       -webkit-transform: translateY(2px);
