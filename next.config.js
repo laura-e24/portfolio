@@ -3,11 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: false,
   images: {
-    domains: ['cdn.simpleicons.org'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.simpleicons.org/**',
+        hostname: 'cdn.simpleicons.org',
+        port: '',
+        pathname: '/**',
       },
     ],
   },
