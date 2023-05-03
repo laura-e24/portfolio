@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Router from 'next/router'
 import computer from '../../public/computer.png'
+import about from '../../public/about.png'
 import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 import { skills, projects } from "../data/index"
@@ -19,12 +20,20 @@ export default function Home() {
       </Head>
       <Layout>
         <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between select-none'>
-          <div className='block my-auto px-5 md:px-0'>
+          <div className='mx-auto md:mx-0 block my-auto px-5 md:px-0'>
             <span>
-              <h1 className='text-white font-sans text-5xl md:text-6xl font-bold'>Hola, soy Laura</h1>
-              <p className='text-2xl font-light mb-4 text-gray-500 underline-color'><span>Fullstack web developer.</span></p>
+              <h1 className='text-white hidden md:inline text-6xl font-bold font-sans'>
+                Hola, soy Laura
+              </h1>
+              <h1 className='md:hidden block text-center'>
+                <span className='block text-2xl font-light'>
+                  Hola, soy 
+                </span>
+                <span className='block text-5xl font-bold font-sans'>Laura</span>
+              </h1>
+              <p className='text-lg md:text-2xl font-light mt-2 md:mt-0 mb-4 text-gray-500 underline-color text-center md:text-left'><span>Fullstack web developer.</span></p>
             </span>
-            <button onClick={() => Router.push("#contact")} className='text-sm px-6 py-2 rounded-md mt-4 btn-three'>
+            <button onClick={() => Router.push("#contact")} className='text-sm px-6 py-2 rounded-md mt-5 btn-three flex md:inline justify-center w-full md:w-auto'>
               Contacto
             </button>
           </div>
@@ -43,17 +52,31 @@ export default function Home() {
           </div>
         </section>
         <section id="about" className='py-16 mt-56'>
-          <div className='max-w-screen-lg mx-auto  md:flex justify-between'>
-            <video className='mx-auto md:mx-0 h-auto' controls width="300" height="175" loop autoPlay muted playsInline>
-              <source src="/loading-screen.webm" type="video/webm" />
-            </video>
+          <div className='max-w-screen-lg mx-auto md:flex justify-between'>
+            <Image
+              src={about}
+              alt=""
+              height={400}
+              className='h-auto md:inline hidden'
+              priority
+            />
             <span className='block max-w-prose mt-10 md:my-auto'>
-              <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-right'>Sed ut perspiciatis unde omnis</h1>
-              <p className='text-center md:text-right font-light mt-2 text-sm md:text-base'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+              <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-left'>
+                Sobre mí
+              </h1>
+              <p className='text-justify font-light mt-2 text-sm md:text-base px-6'>
+                Full Stack developer con sólidas habilidades Front-End y 2 años de experiencia 
+                profesional en este área. Comprometida a entregar resultados atractivos, 
+                limpios y escalables para cada proyecto en el que trabajo. 
+                Hábil con HTML, CSS, JavaScript, React, REST APIs, y actualmente dedicada 
+                a expandir mis habilidades de backend aprendiendo Java. 
+                Gran capacidad de autogestión durante proyectos independientes, 
+                como así también para colaborar en equipo bajo metodologías ágiles como SCRUM.
+              </p>
             </span>
           </div>
         </section>
-        <section id="skills" className='max-w-screen-lg mx-auto'>
+        <section id="skills" className='max-w-screen-lg mx-auto '>
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Habilidades</h1>
           <div className='grid grid-cols-2 lg:grid-cols-8 p-6 gap-4'>
             {skills.map((s, i) => <SkillCard key={i} skill={s} />)}

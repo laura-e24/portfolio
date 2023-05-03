@@ -10,34 +10,34 @@ const ProjectCard = ({ project }) => {
    <>
     <div className='rounded lg:bg-one lg:bg-opacity-5 mb-10 p-4 lg:p-6'> 
       <div className='w-full lg:flex relative'>
-        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage: `url(/projects/${project.thumbnail})`}}>
-          <div className='absolute top-0 right-0 hidden lg:flex space-x-4'>
-            {project.repo && (
-              <a href={project.repo} target='_blank'>
-               <FAIcon size='md' name="github" type='brands' />
-              </a>
-            )}
-            {project.deploy && (
-              <a href={project.deploy} target='_blank'>
-                <FAIcon size='md' name="arrow-up-right-from-square" type='light' />
-              </a>
-            )}
-          </div>
+        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage: `url(/projects/${project.thumbnail})`, zIndex: -1}}>
+        </div>
+        <div className='absolute top-0 right-0 hidden lg:flex' style={{top: -8}}>
+          {project.repo && (
+            <a href={project.repo} target='_blank'>
+              <FAIcon color='hover:text-gray-500' size='md' name="github" type='brands' />
+            </a>
+          )}
+          {project.deploy && (
+            <a href={project.deploy} target='_blank'>
+              <FAIcon color='hover:text-gray-500' size='md' name="arrow-up-right-from-square" type='light' />
+            </a>
+          )}
         </div>
         <div className='relative bg-one bg-opacity-5 lg:bg-transparent rounded p-4 lg:py-0 lg:px-16 mt-2 lg:my-auto text-container-size'>
           <div className='absolute top-0 right-0 flex lg:hidden space-x-2 p-2'>
             {project.repo && (
               <a href={project.repo} target='_blank'>
-               <FAIcon color='text-one' name="github" type='brands' />
+               <FAIcon color='text-four active:text-gray-500' name="github" type='brands' />
               </a>
             )}
             {project.deploy && (
               <a href={project.deploy} target='_blank'>
-                <FAIcon color='text-one' name="arrow-up-right-from-square" />
+                <FAIcon color='text-four active:text-gray-500' name="arrow-up-right-from-square" />
               </a>
             )}
           </div>
-          <p className="font-medium text-gray-100 text-lg">
+          <p className="font-medium text-gray-100 text-lg inline-block">
             {project?.name}
           </p>
           <p className="font-light text-sm mt-2 text-gray-400 leading-tight">

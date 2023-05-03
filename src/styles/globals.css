@@ -55,7 +55,7 @@ main {
   height: 100%;
   z-index: 1;
   background-color: rgba(133, 59, 206, .2);
-  border-radius: 8px;
+  /* border-radius: 8px; */
   transition: all 0.3s;
 }
 .btn-three:hover::before {
@@ -74,7 +74,7 @@ main {
   transition: all 0.3s;
   border: 1px solid rgba(133, 59, 206, .5);
   transform: scale(1.2,1.2);
-  border-radius: 6px;
+  /* border-radius: 6px; */
 
 }
 .btn-three:hover::after {
@@ -145,11 +145,14 @@ p.underline-color {
   opacity: .5
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .bg {
     bottom: 0;
     height: 200%;
   }
+}
+
+@media (max-width: 768px) {
   .bg-footer {
     width: 200%;
   }
