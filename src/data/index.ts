@@ -133,10 +133,21 @@ export const skills = [
 
 export const projects = [
   {
+    name: "Portfolio",
+    description: "Este sitio que estás viendo en pantalla. Mi portfolio personal donde iré mostrando mis habilidades, experiencias, proyectos, entre otras cosas; siempre intentando seguir un diseño UI/UX agradable, responsive y fiel a mi estilo.",
+    thumbnail: "portfolio.png",
+    tech: ["node.js", "react", "css3", "styledcomponents", "typescript", "nextdotjs", "figma"],
+    status: "Activo",
+    type: "Proyecto personal",
+    repo: "https://github.com/laura-e24/portfolio",
+    deploy: null,
+    date: "Febrero 2023 ─ actualidad"
+  },
+  {
     name: "Marvel's Characters App",
     description: "Listado de personajes de Marvel utilizando su REST API. UI/UX responsive e intuitiva y adaptado al diseño de la página oficial de Marvel.",
     thumbnail: "bsmart.png",
-    tech: ["node.js", "react", "css3", "styledcomponents"],
+    tech: ["node.js", "react", "css3", "styledcomponents", "figma"],
     status: "Terminado",
     type: "Prueba técnica",
     repo: "https://github.com/laura-e24/BSMART-frontend-challenge",
@@ -167,9 +178,9 @@ export const projects = [
   }, 
   {
     name: "La Dionisia",
-    description: "Vinoteca online — ecommerce — con un amplio catálogo de distintos vinos. Incluye múltiples filtros y ordenamientos combinados, registro y auntenticación, guardado de favoritos, plataforma de pago que admite PayPal y tarjetas de crédito/débito, y rol de administrador para gestionar la tienda.",
+    description: "Vinoteca online — ecommerce — con un amplio catálogo de distintos vinos traídos de API propia construida con PHP y MySQL. Incluye múltiples filtros y ordenamientos combinados, registro y auntenticación, guardado de favoritos, plataforma de pago que admite PayPal y tarjetas de crédito/débito, y rol de administrador para gestionar la tienda. UI/UX totalmente responsive, agradable y con múltiples funcionalidades de accesibilidad.",
     thumbnail: "dionisia.png",
-    tech: ["node.js", "react", "typescript", "nextdotjs", "express", "css3", "tailwindcss", "redux", "postgresql", "auth0", "stripe"],
+    tech: ["node.js", "react", "typescript", "nextdotjs", "express", "css3", "tailwindcss", "redux", "postgresql", "auth0", "stripe", "figma", "php", "mysql"],
     status: "Terminado",
     type: "Proyecto académico grupal",
     repo: "https://github.com/laura-e24/LaDionisiaFront",
@@ -180,7 +191,7 @@ export const projects = [
     name: "Henry Countries",
     description: "Extrae de una API externa y guarda en base de datos la información de los países del mundo, permitiendo ver todos sus detalles y gestionar actividades turísticas; creando, editando y eliminándolas. Incluye búsqueda y múltiples filtros y ordenamientos combinados para facilitar la selección de países.",
     thumbnail: "PI.png",
-    tech: ["node.js", "react", "express", "css3", "styledcomponents", "redux", "postgresql"],
+    tech: ["node.js", "react", "express", "css3", "styledcomponents", "redux", "postgresql", "figma"],
     status: "Activo",
     type: "Proyecto académico",
     repo: "https://github.com/laura-e24/PI-Countries",

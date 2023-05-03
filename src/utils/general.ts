@@ -26,6 +26,12 @@ export const techFullName = (technology: string) => {
     case "postgresql":
       return "PostgreSQL"
 
+    case "mysql":
+      return "MySQL"
+
+    case "php":
+      return "PHP"
+
     default:
       return capitalize(technology)
   }

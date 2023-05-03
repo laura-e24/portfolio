@@ -64,7 +64,7 @@ export default function Home() {
               <h1 className='text-white font-sans text-2xl md:text-3xl font-semibold text-center md:text-left'>
                 Sobre mí
               </h1>
-              <p className='text-justify font-light mt-2 text-sm md:text-base px-6'>
+              <p className='text-justify font-light mt-2 text-sm md:text-base px-6 md:px-0'>
                 Full Stack developer con sólidas habilidades Front-End y 2 años de experiencia 
                 profesional en este área. Comprometida a entregar resultados atractivos, 
                 limpios y escalables para cada proyecto en el que trabajo. 
