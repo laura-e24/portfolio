@@ -7,7 +7,7 @@ const Footer = () => {
     <style>
       {`
         .glow-magenta {
-          text-shadow: 2px 2px 5px magenta;
+          text-shadow: 2px 2px 3px #3B52D9;
         }
         .no-margin {
           margin-left: 0 !important;
@@ -15,8 +15,8 @@ const Footer = () => {
         }
       `}
     </style>
-    <footer id="contact" className="relative bottom-0 w-full mt-64 py-16">
-      <p className="text-center font-medium tracking-wider pb-10">Contacto</p>
+    <footer id="contact" className="relative bottom-0 w-full mt-64 pt-16 pb-16">
+      {/* <p className="text-center font-medium tracking-wider pb-10">Contacto</p>
       <div className="w-full justify-center flex">
         <address className="inline-block mx-auto md:flex lg:w-3/5 md:justify-around text-sm font-light">
           <Link 
@@ -49,8 +49,7 @@ const Footer = () => {
             <p className="ml-4 my-auto not-italic">lceiry@outlook.com</p>
           </Link> 
         </address>
-      </div>
-      {/* <div className="bg-footer"></div> */}
+      </div> */}
     </footer>
     </>
   );

@@ -8,6 +8,8 @@ import Image from 'next/image'
 import { skills, projects } from "../data/index"
 import ProjectCard from '@/components/ProjectCard'
 import SkillCard from '@/components/SkillCard'
+import Link from 'next/link'
+import FAIcon from '@/components/FAIcon'
 
 export default function Home() {
 
@@ -22,20 +24,37 @@ export default function Home() {
         <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between select-none'>
           <div className='mx-auto md:mx-0 block my-auto px-5 md:px-0'>
             <span>
-              <h1 className='text-white hidden md:inline text-6xl font-bold font-sans'>
-                Hola, soy Laura
-              </h1>
-              <h1 className='md:hidden block text-center'>
-                <span className='block text-2xl font-light'>
+              <h1 className='text-center md:text-left'>
+                <span className='block text-2xl md:text-3xl font-light'>
                   Hola, soy 
                 </span>
-                <span className='block text-5xl font-bold font-sans'>Laura</span>
+                <span className='block text-5xl md:text-7xl font-bold font-sans'>Laura</span>
               </h1>
-              <p className='text-lg md:text-2xl font-light mt-2 md:mt-0 mb-4 text-gray-500 underline-color text-center md:text-left'><span>Fullstack web developer.</span></p>
+              <p className='text-lg md:text-2xl font-light mt-2 md:mt-4 mb-4 text-gray-500 underline-color text-center md:text-left'><span>Fullstack web developer.</span></p>
             </span>
-            <button onClick={() => Router.push("#contact")} className='text-sm px-6 py-2 rounded-md mt-5 btn-three flex md:inline justify-center w-full md:w-auto'>
-              Contacto
-            </button>
+            <address className="flex space-x-6 justify-center md:justify-start">
+              <Link 
+                passHref
+                target="_blank" 
+                href="https://www.linkedin.com/in/mlauraeliceiry" 
+              >
+                <FAIcon size="md" className="no-margin glow-magenta" type="brands" name="linkedin" color="text-four hover:text-gray-300" />
+              </Link>
+              <Link 
+                passHref
+                target="_blank" 
+                href="https://github.com/laura-e24"
+              >
+                <FAIcon size="md" className="no-margin glow-magenta" type="brands" name="github" color="text-four hover:text-gray-300" />
+              </Link> 
+              <Link 
+                passHref
+                target="_blank" 
+                href="mailto:lceiry@outlook.com"
+              >
+                <FAIcon size="md" className="no-margin glow-magenta" type="solid" name="envelope" color="text-four hover:text-gray-300" />
+              </Link> 
+            </address>
           </div>
           <div className="relative hidden md:inline">
             <video className='screen' controls width="200" height="175" loop autoPlay muted playsInline>

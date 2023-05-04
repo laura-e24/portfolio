@@ -10,11 +10,9 @@ const Layout = ({ children }) => {
     </style>
       <main>
         <div className="bg"></div>
-        <div className="wave">
-          {/* <img src="/pattern.svg" className='w-full' /> */}
-        </div>
+        <div className="wave"></div>
         <NavBar />
-        <div className='mt-20'>
+        <div className='mt-20 md:mt-0'>
           {children}
         </div>
         <Footer />
