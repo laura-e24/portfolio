@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -23,6 +22,13 @@ const Layout = ({ children }) => {
     <>
     <style>
       {`
+        .glow-magenta {
+          text-shadow: 2px 2px 3px #3B52D9;
+        }
+        .no-margin {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
       `}
     </style>
       <main className="relative">
@@ -36,11 +42,10 @@ const Layout = ({ children }) => {
         style={{ backgroundImage: `url(/pattern.svg)`, height: 400}}
       ></div>
       <NavBar />
-      <div className='mt-20 md:mt-0'>
+      <div className='mt-20 md:mt-0 pb-56'>
         {children}
       </div>
-      <Footer />
-        <Particles 
+      <Particles 
         id="tsparticles" 
         options={{
           fpsLimit: 60,
@@ -106,7 +111,7 @@ const Layout = ({ children }) => {
         init={particlesInit} 
         // loaded={particlesLoaded} 
         style={{overflowY: "scroll"}}
-        />
+      />
       </main>
     </>
   );

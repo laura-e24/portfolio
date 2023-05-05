@@ -134,7 +134,7 @@ export const skills = [
 export const projects = [
   {
     name: "Portfolio",
-    description: "Este sitio que estás viendo en pantalla. Mi portfolio personal donde iré mostrando mis habilidades, experiencias, proyectos, entre otras cosas; siempre intentando seguir un diseño UI/UX agradable, responsive y fiel a mi estilo.",
+    description: "Este sitio que estás viendo en pantalla. Mi portfolio personal donde iré mostrando mis habilidades, experiencias y proyectos; siempre intentando seguir un diseño UI/UX agradable, responsive y fiel a mi estilo.",
     thumbnail: "portfolio.png",
     tech: ["node.js", "react", "css3", "styledcomponents", "typescript", "nextdotjs", "figma"],
     status: "Activo",

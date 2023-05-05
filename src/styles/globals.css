@@ -4,11 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/******* CONFIGURACIONES GENERALES *******/
 :root {
   font-family: 'Source Sans Pro', sans-serif;
-  scroll-behavior: smooth;
-
 }
 
 * {
@@ -27,15 +25,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(10deg);
-  }
-}
 body {
   background-color: #13111C;
   overflow: hidden;
@@ -46,262 +35,6 @@ main {
   overflow-y: scroll;
   height: 100vh;
   width: 100%;
-}
-
-.btn-three {
-  color: #CCCCCC;
-  transition: all 0.5s;
-  position: relative;
-}
-.btn-three::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(133, 59, 206, .2);
-  /* border-radius: 8px; */
-  transition: all 0.3s;
-}
-.btn-three:hover::before {
-  opacity: 0 ;
-  transform: scale(0.5,0.5);
-}
-.btn-three::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border: 1px solid rgba(133, 59, 206, .5);
-  transform: scale(1.2,1.2);
-  /* border-radius: 6px; */
-
-}
-.btn-three:hover::after {
-  opacity: 1;
-  transform: scale(1,1);
-}
-
-p.underline-color {
-  color: #853BCE;  /* colour of underline */
-  text-decoration: underline;
-}
-
-.wave {
-  background-image: url("/pattern.svg");
-  background-size: cover;
-  opacity: 10%;
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent;
-  background-repeat: repeat;
-  opacity: .9;
-  visibility: visible;
-  z-index: -1;
-}
-
-@media (min-width: 1024px) {
-  .bg {
-    animation: bg-animation 80s linear infinite;
-    background: transparent url('/nnnoise.svg') repeat 0 0;
-  }
-}
-
-
-
-.bg-footer {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 200%;
-  background: transparent url("/wave-footer-dark.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  margin-left: auto;
-  margin-right: auto;
-  visibility: visible;
-  z-index: -2;
-  opacity: .5
-}
-
-@media (max-width: 425px) {
-  .bg {
-    bottom: 0;
-    height: 200%;
-  }
-}
-
-@media (max-width: 768px) {
-  .bg-footer {
-    width: 200%;
-  }
-}
-
-@keyframes bg-animation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.screen {
-  top: 15%;
-  margin-right: 100px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1;
-  position: absolute;
-  width: 200px;
-  transform:  skew(8deg, 25deg);
-  height: 175px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  clip-path: polygon(10% 23%, 45% 16%, 60% 14%, 88% 10%, 76% 85%, 45% 90%, 4% 91%, 7% 55%);
-}
-
-@keyframes jumpy {
-  0% {
-      transform: translateY(2px);
-  }
-  20% {
-      transform: translateY(-2px);
-  }
-  35% {
-      transform: translateY(-2px);
-  }
-  50% {
-      transform: translateY(2px);
-  }
-  65% {
-      transform: translateY(-2px);
-  }
-  80% {
-      transform: translateY(5px);
-  }
-  100% {
-      transform: translateY(-5px);
-  }
-}
-
-@-webkit-keyframes jumpy {
-  0% {
-      -webkit-transform: translateY(2px);
-  }
-  20% {
-      -webkit-transform: translateY(-2px);
-  }
-  35% {
-      -webkit-transform: translateY(-2px);
-  }
-  50% {
-      -webkit-transform: translateY(2px);
-  }
-  65% {
-      -webkit-transform: translateY(-2px);
-  }
-  80% {
-      -webkit-transform: translateY(5px);
-  }
-  100% {
-      -webkit-transform: translateY(-5px);
-  }
-}
-
-.animation {
-  animation: jumpy 4s linear infinite;
-}
-
-.typewriter-eff span {
-  font-family: 'Source Code Pro', monospace;
-  display: block;
-  color: rgb(156 163 175);
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid #9F76D9; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.01em; /* Adjust as needed */
-  animation: 
-    typing 2.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #9F76D9; }
-}
-
-.shadow-top {
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0px -4px 3px rgb(0 0 0 / 0.1);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#bullet::after{
-  content: '•';
-  margin: 0 0.5rem
-}
-
-video::-webkit-media-controls {
-  display: none;
-}
-
-.bg-project {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  right: 0%;
-  width: 100%;
-  height: 200;
-  background: url("/project-mock.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  margin-left: auto;
-  margin-right: auto;
-  visibility: visible;
-  z-index: 1;
 }
 
 /* width */
@@ -323,4 +56,71 @@ video::-webkit-media-controls {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+
+/******* CONFIGURACIONES ESPECÍFICAS *******/
+p.underline-color {
+  color: #853BCE;  /* colour of underline */
+  text-decoration: underline;
+}
+
+#bullet::after{
+  content: '•';
+  margin: 0 0.5rem
+}
+
+.pc-screen-gif {
+  top: 15%;
+  margin-right: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  transform:  skew(8deg, 25deg);
+  height: 175px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  clip-path: polygon(10% 23%, 45% 16%, 60% 14%, 88% 10%, 76% 85%, 45% 90%, 4% 91%, 7% 55%);
+}
+
+
+
+/******* ANIMACIONES *******/
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #9F76D9; }
+}
+
+.typewriter-eff span {
+  font-family: 'Source Code Pro', monospace;
+  display: block;
+  color: rgb(156 163 175);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #9F76D9; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.01em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }

@@ -65,7 +65,7 @@ export default function Home() {
             </address>
           </div>
           <div className="relative hidden md:inline">
-            <video className='screen' controls width="200" height="175" loop autoPlay muted playsInline>
+            <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
               <source src="/screen.webm" type="video/webm" />
             </video>
             <Image
