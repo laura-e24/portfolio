@@ -1,6 +1,5 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Router from 'next/router'
 import computer from '../../public/computer.png'
 import about from '../../public/about.png'
 import java from '../../public/skills/java.svg'
