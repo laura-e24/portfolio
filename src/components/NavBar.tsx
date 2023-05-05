@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 const NavBar = () => {
   const path = useRouter();
   const pathIncludes = (ref: string) => path.asPath.includes(ref);
-
+ 
   return (
     <>
     <style>
@@ -20,7 +20,7 @@ const NavBar = () => {
         }
       `}
     </style>
-    <nav className="bg-three md:bg-transparent bottom md:top-0 fixed md:sticky w-full flex md:justify-center justify-around text-sm text-opacity-10 md:space-x-6 py-4 md:py-8" style={{zIndex: 1}}>
+    <nav className={`bg-three md:bg-transparent bottom md:top-0 fixed md:sticky w-full flex md:justify-center justify-around text-sm text-opacity-10 md:space-x-6 py-4 md:py-8`} style={{zIndex: 1, height: 66}}>
       <Link className="hover:text-one glow hidden md:inline border-r border-gray-600 pr-4 border-opacity-50" href='#home'>
         Inicio
       </Link>
