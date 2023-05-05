@@ -141,7 +141,7 @@ export const projects = [
     type: "Proyecto personal",
     repo: "https://github.com/laura-e24/portfolio",
     deploy: null,
-    date: "Febrero 2023 ─ actualidad"
+    date: "Febrero 2023 ─ Mayo 2023"
   },
   {
     name: "Marvel's Characters App",
