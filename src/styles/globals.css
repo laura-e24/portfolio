@@ -7,6 +7,8 @@
 
 :root {
   font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: smooth;
+
 }
 
 * {
@@ -19,6 +21,10 @@
 html,
 body {
   max-width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @keyframes rotBGimg {
@@ -235,6 +241,32 @@ p.underline-color {
 
 .animation {
   animation: jumpy 4s linear infinite;
+}
+
+.typewriter-eff span {
+  font-family: 'Source Code Pro', monospace;
+  display: block;
+  color: rgb(156 163 175);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #9F76D9; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.01em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #9F76D9; }
 }
 
 .shadow-top {

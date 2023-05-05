@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Layout>
-        <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between select-none'>
+        <section id="home" className='max-w-screen-lg mx-auto w-full flex justify-between select-none lg:px-20'>
           <div className='mx-auto md:mx-0 block my-auto px-5 md:px-0'>
             <span>
               <h1 className='text-center md:text-left'>
@@ -30,9 +30,11 @@ export default function Home() {
                 </span>
                 <span className='block text-5xl md:text-7xl font-bold font-sans'>Laura</span>
               </h1>
-              <p className='text-lg md:text-2xl font-light mt-2 md:mt-4 mb-4 text-gray-500 underline-color text-center md:text-left'><span>Fullstack web developer.</span></p>
+              <p className='typewriter-eff md:text-xl mt-2 md:mt-4 mb-4 text-gray-600 underline-color text-center md:text-left'>
+                <span>Fullstack web developer.</span>
+              </p>
             </span>
-            <address className="flex space-x-6 justify-center md:justify-start">
+            <address className="flex space-x-6 justify-center md:justify-start mt-10 md:mt-0">
               <Link 
                 passHref
                 target="_blank" 
@@ -70,7 +72,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section id="about" className='py-16 mt-56'>
+        <section id="about" className='py-16 mt-40 md:mt-56'>
           <div className='max-w-screen-lg mx-auto md:flex justify-between'>
             <Image
               src={about}
@@ -95,7 +97,7 @@ export default function Home() {
             </span>
           </div>
         </section>
-        <section id="skills" className='max-w-screen-lg mx-auto '>
+        <section id="skills" className='max-w-screen-lg mx-auto pt-1'>
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Habilidades</h1>
           <div className='grid grid-cols-2 lg:grid-cols-8 p-6 gap-4'>
             {skills.map((s, i) => <SkillCard key={i} skill={s} />)}
@@ -116,7 +118,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="projects" className='max-w-screen-lg mx-auto'>
+        <section id="projects" className='max-w-screen-lg mx-auto pt-1'>
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Proyectos</h1>
           <div className='py-6 gap-4'>
             {projects.map((p, i) => <ProjectCard key={i} project={p} />)}

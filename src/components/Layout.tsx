@@ -24,7 +24,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Image from "next/image";
-import wavebg from "../../public/test.svg"
+import wavebg from "../../public/pattern.svg"
 
 const Layout = ({ children }) => {
   const particlesInit = useCallback(async engine => {
@@ -47,15 +47,16 @@ const Layout = ({ children }) => {
     </style>
       <main className="relative">
         {/* <div className="bg"></div> */}
-        <div className="relative">
           <Image
             src={wavebg}
             alt=""
-            className="absolute inset-x-0 -z-10"
-            style={{filter: 'drop-shadow(0px 0px 5px #181622)'}}
+            className="absolute inset-x-0 -z-10 rotate-180 opacity-25 -top-16 hidden md:inline"
           />
-        </div>
-       
+        
+        <div 
+          className='w-full bg-center bg-cover bg-img-size md:hidden absolute inset-x-0 -z-10 rotate-180 opacity-25' 
+          style={{ backgroundImage: `url(/pattern.svg)`, height: 400}}
+        ></div>
         <NavBar />
         <div className='mt-20 md:mt-0'>
           {children}
