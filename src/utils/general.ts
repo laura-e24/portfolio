@@ -8,7 +8,7 @@ export const techFullName = (technology: string) => {
     case "css3":
       return "CSS"
 
-    case "tailwind":
+    case "tailwindcss":
       return "TailwindCSS"
 
     case "styledcomponents":
