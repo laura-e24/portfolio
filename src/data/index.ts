@@ -151,7 +151,7 @@ export const projects = [
     status: "Terminado",
     type: "Prueba técnica",
     repo: "https://github.com/laura-e24/BSMART-frontend-challenge",
-    deploy: null,
+    deploy: "https://marvelscharacters.vercel.app",
     date: "Abril 2023"
   }, 
   {
