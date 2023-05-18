@@ -202,7 +202,7 @@ export const projects = [
     name: "UpTask",
     description: "Admistrador de proyectos y tareas. Permite crearnos una cuenta con email y contraseña, validando los datos para la autenticación mediante JSON Web Token, pudiendo además restablecer la clave en caso de olvidarla. Al mismo tiempo, cada vez que registremos una cuenta nueva o queramos restablecer la contraseña, nos llegará un mail para confirmar el cambio. Permite crear tantos proyectos como queramos, con tantas tareas como queramos; pudiendo editarlas, eliminarlas o marcarlas como completadas. A su vez, se pueden agregar varios colaboradores a los proyectos, de modo que sólo quienes tengan acceso al mismo podrán verlo e interactuar con él.",
     thumbnail: "uptask.png",
-    tech: ["node.js", "react", "typescript", "vite", "express", "css3", "tailwindcss", "redux", "mongodb", "nodemailer", "jsonwebtoken"],
+    tech: ["node.js", "react", "typescript", "vite", "express", "css3", "tailwindcss", "redux", "mongodb", "jsonwebtokens"],
     status: "Activo",
     type: "Proyecto académico (curso)",
     repo: "https://github.com/laura-e24/UpTask",
