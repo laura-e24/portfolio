@@ -199,6 +199,17 @@ export const projects = [
     date: "Noviembre ─ diciembre 2022"
   }, 
   {
+    name: "UpTask",
+    description: "Admistrador de proyectos y tareas. Permite crearnos una cuenta con email y contraseña, validando los datos para la autenticación mediante JSON Web Token, pudiendo además restablecer la clave en caso de olvidarla. Al mismo tiempo, cada vez que registremos una cuenta nueva o queramos restablecer la contraseña, nos llegará un mail para confirmar el cambio. Permite crear tantos proyectos como queramos, con tantas tareas como queramos; pudiendo editarlas, eliminarlas o marcarlas como completadas. A su vez, se pueden agregar varios colaboradores a los proyectos, de modo que sólo quienes tengan acceso al mismo podrán verlo e interactuar con él.",
+    thumbnail: "uptask.png",
+    tech: ["node.js", "react", "typescript", "vite", "express", "css3", "tailwindcss", "redux", "mongodb", "nodemailer", "jsonwebtoken"],
+    status: "Activo",
+    type: "Proyecto académico (curso)",
+    repo: "https://github.com/laura-e24/UpTask",
+    deploy: null,
+    date: "2022 ─ actualidad"
+  }, 
+  {
     name: "Cotizador de seguros de automóviles",
     description: "Aplicación sencilla que simula un cotizador de seguro para automóviles, pudiendo elegir marca y año del auto y tipo de seguro deseado, para luego calcular el precio según las especificaciones seleccionadas.",
     thumbnail: "cotizador.png",
