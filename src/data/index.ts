@@ -191,7 +191,7 @@ export const projects = [
     name: "Henry Countries",
     description: "Extrae de una API externa y guarda en base de datos la información de los países del mundo, permitiendo ver todos sus detalles y gestionar actividades turísticas; creando, editando y eliminándolas. Incluye búsqueda y múltiples filtros y ordenamientos combinados para facilitar la selección de países.",
     thumbnail: "PI.png",
-    tech: ["node.js", "react", "express", "css3", "styledcomponents", "redux", "postgresql", "figma"],
+    tech: ["node.js", "vite", "react", "express", "css3", "styledcomponents", "redux", "postgresql", "figma"],
     status: "Activo",
     type: "Proyecto académico",
     repo: "https://github.com/laura-e24/PI-Countries",
