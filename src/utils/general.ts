@@ -32,6 +32,12 @@ export const techFullName = (technology: string) => {
     case "php":
       return "PHP"
 
+    case "typescript":
+      return "TypeScript"
+
+    case "jsonwebtokens":
+      return "JSON Web Token"
+
     default:
       return capitalize(technology)
   }
