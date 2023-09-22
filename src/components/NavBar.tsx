@@ -1,5 +1,6 @@
 import Link from "next/link";
-import FAIcon from "./FAIcon";
+import dynamic from 'next/dynamic'
+const FAIcon = dynamic(() => import('./FAIcon'))
 import { useRouter } from 'next/router'
 
 const NavBar = () => {
