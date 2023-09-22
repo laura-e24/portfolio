@@ -1,6 +1,5 @@
 import dynamic from 'next/dynamic'
-//import '@/styles/globals.css'
-const global = dynamic(() => import('@/styles/globals.css'))
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 //import "../styles/css/all.min.css"
 dynamic(() => import("@/styles/css/all.min.css"))
