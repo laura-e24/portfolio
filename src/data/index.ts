@@ -1,3 +1,5 @@
+projects/${projprojects/${proj
+
 export const skills = [
   {
     name: "HTML5",
@@ -135,7 +137,7 @@ export const projects = [
   {
     name: "Portfolio",
     description: "Este sitio que estás viendo en pantalla. Mi portfolio personal donde iré mostrando mis habilidades, experiencias y proyectos; siempre intentando seguir un diseño UI/UX agradable, responsive y fiel a mi estilo.",
-    thumbnail: "portfolio.png",
+    thumbnail: {import portfolio from "../../public/portfolio.png"},
     tech: ["node.js", "react", "css3", "tailwindcss", "styledcomponents", "typescript", "nextdotjs", "figma"],
     status: "Activo",
     type: "Proyecto personal",
