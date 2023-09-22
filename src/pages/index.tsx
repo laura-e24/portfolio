@@ -9,7 +9,7 @@ import { skills, projects } from "../data/index"
 import ProjectCard from '@/components/ProjectCard'
 import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
-import gifScreen from "../../public/screen.webm";
+import screen from "../../public/screen.webm";
 const FAIcon = dynamic(() => import("@/components/FAIcon"));
 const Layout = dynamic(() => import("@/components/Layout"));
 
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
-              <source src={gifScreen} type="video/webm" />
+              <source src={screen} type="video/webm" />
             </video>
             <Image
               src={computer}
