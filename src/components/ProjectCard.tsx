@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
    <>
     <div className='rounded lg:bg-one lg:bg-opacity-5 mb-10 p-4 lg:p-6'> 
       <div className='w-full lg:flex relative'>
-        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage:`url(/projects/${project.thumbnail})`, zIndex: -1}}>
+        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage:`url(${project.thumbnail})`, zIndex: -1}}>
         </div>
         <div className='absolute top-0 right-0 hidden lg:flex' style={{top: -8}}>
           {project.repo && (
