@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 //import '@/styles/globals.css'
 dynamic(() => import("../styles/globals.css"))
 import type { AppProps } from 'next/app'
