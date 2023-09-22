@@ -1,4 +1,6 @@
-import Layout from '@/components/Layout'
+import dynamic from "next/dynamic";
+
+//import Layout from '@/components/Layout'
 import Head from 'next/head'
 import computer from '../../public/computer.png'
 import about from '../../public/about.png'
@@ -8,7 +10,8 @@ import { skills, projects } from "../data/index"
 import ProjectCard from '@/components/ProjectCard'
 import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
-import FAIcon from '@/components/FAIcon'
+const FAIcon = dynamic(() => import("@/components/FAIcon"));
+const Layout = dynamic(() => import("@/components/Layout"));
 
 export default function Home() {
 
