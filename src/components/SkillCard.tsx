@@ -1,4 +1,5 @@
 //import SIcon from "./SIcon";
+import dynamic from 'next/dynamic'
 const SIcon = dynamic(() => import('./SIcon'))
 
 const SkillCard = ({ skill }) => {
