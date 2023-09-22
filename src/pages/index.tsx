@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 
-//import Layout from '@/components/Layout'
 import Head from 'next/head'
 import computer from '../../public/computer.png'
 import about from '../../public/about.png'
