@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-
 import Head from 'next/head'
 import computer from '../../public/computer.png'
 import about from '../../public/about.png'
@@ -9,7 +8,6 @@ import { skills, projects } from "../data/index"
 import ProjectCard from '@/components/ProjectCard'
 import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
-import screen from "/public/screen.webm";
 const FAIcon = dynamic(() => import("@/components/FAIcon"));
 const Layout = dynamic(() => import("@/components/Layout"));
 
@@ -68,7 +66,7 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
-              <source src={screen} type="video/webm" />
+              <source src={"/screen.webm"} type="video/webm" />
             </video>
             <Image
               src={computer}
