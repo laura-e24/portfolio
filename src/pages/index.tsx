@@ -9,7 +9,7 @@ import { skills, projects } from "../data/index"
 import ProjectCard from '@/components/ProjectCard'
 import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
-import screen from "../../public/screen.webm";
+import screen from "/public/screen.webm";
 const FAIcon = dynamic(() => import("@/components/FAIcon"));
 const Layout = dynamic(() => import("@/components/Layout"));
 
