@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 const Particles = dynamic(() => import('react-tsparticles'))
-import NavBar from "./NavBar";
+const NavBar = dynamic(() => import('./NavBar'))
+//import NavBar from "./NavBar";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Image from "next/image";
