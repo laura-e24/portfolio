@@ -5,9 +5,11 @@ import about from '../../public/about.png'
 import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 import { skills, projects } from "../data/index"
-import ProjectCard from '@/components/ProjectCard'
-import SkillCard from '@/components/SkillCard'
+//import ProjectCard from '@/components/ProjectCard'
+//import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
+const ProjectCard = dynamic(() => import("@/components/ProjectCard"));
+const SkillCard = dynamic(() => import("@/components/SkillCard"));
 const FAIcon = dynamic(() => import("@/components/FAIcon"));
 const Layout = dynamic(() => import("@/components/Layout"));
 
