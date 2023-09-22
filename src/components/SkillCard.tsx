@@ -1,4 +1,5 @@
-import SIcon from "./SIcon";
+//import SIcon from "./SIcon";
+const SIcon = dynamic(() => import('./SIcon'))
 
 const SkillCard = ({ skill }) => {
   return (  
