@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import { techFullName } from '@/utils/general';
 import { Tooltip } from 'react-tooltip';
-import SIcon from './SIcon';
+//import SIcon from './SIcon';
 import FAIcon from './FAIcon';
-
+import dynamic from 'next/dynamic'
+ 
+const SIcon = dynamic(() => import('./SIcon'))
 
 const ProjectCard = ({ project }) => {
   return (  
