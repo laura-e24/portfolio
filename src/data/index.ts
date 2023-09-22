@@ -1,5 +1,3 @@
-projects/${projprojects/${proj
-
 export const skills = [
   {
     name: "HTML5",
