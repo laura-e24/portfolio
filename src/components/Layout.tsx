@@ -1,10 +1,8 @@
 import dynamic from 'next/dynamic'
 const Particles = dynamic(() => import('react-tsparticles'))
-const { loadFull } = dynamic(() => import('tsparticles'))
-
 import NavBar from "./NavBar";
 //import Particles from "react-tsparticles";
-//import { loadFull } from "tsparticles";
+import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Image from "next/image";
 import wavebg from "../../public/pattern.svg"
