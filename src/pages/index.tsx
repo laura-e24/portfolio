@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
-              <source src="https://pixabay.com/videos/birds-flock-fly-sky-circle-138891/" type="video/webm" />
+              <source src="https://player.vimeo.com/video/770540401?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1" type="video/webm" />
             </video>
             <Image
               src={computer}
