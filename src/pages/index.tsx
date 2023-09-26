@@ -5,16 +5,14 @@ import about from '../../public/about.png'
 import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 import { skills, projects } from "../data/index"
-//import ProjectCard from '@/components/ProjectCard'
-//import SkillCard from '@/components/SkillCard'
 import Link from 'next/link'
+
 const ProjectCard = dynamic(() => import("@/components/ProjectCard"));
 const SkillCard = dynamic(() => import("@/components/SkillCard"));
 const FAIcon = dynamic(() => import("@/components/FAIcon"));
 const Layout = dynamic(() => import("@/components/Layout"));
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -68,7 +66,7 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
-              <source src={"/screen.webm"} type="video/webm" />
+              <source src="https://pixabay.com/videos/birds-flock-fly-sky-circle-138891/" type="video/webm" />
             </video>
             <Image
               src={computer}
