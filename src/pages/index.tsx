@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="relative hidden md:inline">
             <video className='pc-screen-gif' controls width="200" height="175" loop autoPlay muted playsInline>
-              <source src="https://player.vimeo.com/video/770540401?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1" type="video/webm" />
+              <source src="/screen.webm" type="video/webm" />
             </video>
             <Image
               src={computer}
@@ -107,21 +107,6 @@ export default function Home() {
           <h1 className='text-white text-center text-2xl md:text-3xl font-sans font-bold mt-32'>Habilidades</h1>
           <div className='grid grid-cols-2 lg:grid-cols-8 p-6 gap-4'>
             {skills.map((s, i) => <SkillCard key={i} skill={s} />)}
-            <div>
-              <p className="text-xs whitespace-nowrap font-light mb-1 ml-1">Aprendiendo...</p>
-              <div className='rounded-lg p-4 bg-one bg-opacity-10 place-content-center'> 
-                <span className='justify-center h-full my-auto flex flex-wrap content-center'>
-                  <Image
-                    src={java}
-                    alt=""
-                    className='mx-auto h-10 w-10'
-                  />
-                  <p style={{ backgroundColor: "#4E7896" }} className={`text-center font-light text-sm w-full mt-3 text-gray-100 bg-opacity-10 inline-block` }>
-                    Java
-                  </p>
-                </span>
-              </div>
-            </div>
           </div>
         </section>
         <section id="projects" className='max-w-screen-lg mx-auto pt-1'>

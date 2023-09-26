@@ -8,17 +8,17 @@ const SIcon = dynamic(() => import('./SIcon'))
 const FAIcon = dynamic(() => import('./FAIcon'))
 
 const ProjectCard = ({ project }) => {
-const [result, setResult] = useState("");
-const ThumbnailSrc = () => project.thumbnail().then(res => setResult(res))
+const [thumbnailImg, setThumbnailImg] = useState("");
 
 useEffect(() => {
-  ThumbnailSrc()
+  project.thumbnail().then((res: string) => setThumbnailImg(res))
 }, []);
+
 return (  
    <>
     <div className='rounded lg:bg-one lg:bg-opacity-5 mb-10 p-4 lg:p-6'> 
       <div className='w-full lg:flex relative'>
-        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage:`url(${result})`, zIndex: -1}}>
+        <div className='bg-center bg-cover rounded bg-img-size' style={{ backgroundImage:`url(${thumbnailImg})`, zIndex: -1}}>
         </div>
         <div className='absolute top-0 right-0 hidden lg:flex' style={{top: -8}}>
           {project.repo && (

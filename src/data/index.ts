@@ -12,7 +12,7 @@ export const skills = [
   {
     name: "JavaScript",
     slug: "javascript",
-    color: "#F7DF1E",
+    color: "#897900",
   }, 
   {
     name: "TypeScript",
@@ -22,7 +22,7 @@ export const skills = [
   {
     name: "Node.js",
     slug: "node.js",
-    color: "#339933",
+    color: "#154E16",
   }, 
   {
     name: "NPM",
@@ -32,7 +32,7 @@ export const skills = [
   {
     name: "React",
     slug: "react",
-    color: "#61DAFB",
+    color: "#0170FE",
   }, 
   {
     name: "Redux",
@@ -42,18 +42,28 @@ export const skills = [
   {
     name: "TailwindCSS",
     slug: "tailwindcss",
-    color: "#06B6D4",
+    color: "#3178C6",
   }, 
   {
     name: "Styled components",
     slug: "styledcomponents",
-    color: "#DB7093",
+    color: "#CB3164",
   }, 
   {
     name: "Bootstrap",
     slug: "bootstrap",
     color: "#7952B3",
   }, 
+  {
+    name: "Ant Design",
+    slug: "antdesign",
+    color: "#0170FE",
+  },
+  {
+    name: "Material UI",
+    slug: "mui",
+    color: "#007FFF",
+  },
   {
     name: "NextJS",
     slug: "nextdotjs",
@@ -77,7 +87,7 @@ export const skills = [
   {
     name: "Mocha",
     slug: "mocha",
-    color: "#8D6748",
+    color: "#58402D",
   }, 
   {
     name: "Chai",
@@ -87,32 +97,12 @@ export const skills = [
   {
     name: "Swagger",
     slug: "swagger",
-    color: "#85EA2D",
-  }, 
-  {
-    name: "Vercel",
-    slug: "vercel",
-    color: "#000000",
-  }, 
-  {
-    name: "Railway",
-    slug: "railway",
-    color: "#0B0D0E",
-  }, 
-  {
-    name: "Render",
-    slug: "render",
-    color: "#46E3B7",
-  }, 
-  {
-    name: "Netlify",
-    slug: "netlify",
-    color: "#00C7B7",
+    color: "#154E16",
   }, 
   {
     name: "MongoDB",
     slug: "mongodb",
-    color: "#47A248",
+    color: "#154E16",
   }, 
   {
     name: "PostgreSQL",
