@@ -2,7 +2,6 @@ import dynamic from "next/dynamic";
 import Head from 'next/head'
 import computer from '../../public/computer.png'
 import about from '../../public/about.png'
-import java from '../../public/skills/java.svg'
 import Image from 'next/image'
 import { skills, projects } from "../data/index"
 import Link from 'next/link'
@@ -95,8 +94,8 @@ export default function Home() {
                 Full Stack developer con sólidas habilidades Front-End y 2 años de experiencia 
                 profesional en este área. Comprometida a entregar resultados atractivos, 
                 limpios y escalables para cada proyecto en el que trabajo. 
-                Hábil con HTML, CSS, JavaScript, React, REST APIs, y actualmente dedicada 
-                a expandir mis habilidades de backend aprendiendo Java. 
+                Hábil con HTML, CSS, JavaScript, React, REST APIs, y actualmente desempeñándome
+                como Junior Frontend Developer. 
                 Gran capacidad de autogestión durante proyectos independientes, 
                 como así también para colaborar en equipo bajo metodologías ágiles como SCRUM.
               </p>
