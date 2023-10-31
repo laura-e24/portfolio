@@ -55,12 +55,6 @@ export default function Home() {
               >
                 <FAIcon size="md" className="no-margin glow-magenta" type="solid" name="envelope" color="text-four hover:text-gray-300" />
               </Link> 
-              <a 
-                target="_blank" 
-                href='/assets/CV_MariaLauraEliceiry_ESP.pdf'
-              >
-                <FAIcon size="md" className="no-margin glow-magenta" type="solid" name="file-pdf" color="text-four hover:text-gray-300" />
-              </a> 
             </address>
           </div>
           <div className="relative hidden md:inline">
